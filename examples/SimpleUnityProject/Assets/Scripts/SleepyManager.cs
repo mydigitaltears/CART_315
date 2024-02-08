@@ -8,7 +8,7 @@ public class SleepyManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SleepySpawn());
+        //StartCoroutine(SleepySpawn());
     }
 
     // Update is called once per frame

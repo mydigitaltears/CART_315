@@ -5,10 +5,10 @@ using UnityEngine;
 public class BedController : MonoBehaviour
 {
     private SpriteRenderer sr;
-    public float xLoc = 0;
+    public float yLoc = 0;
     public float score;
     
-    float bedSpeed = .1f;
+    float bedSpeed = .05f;
     float r = 0.001f;
     float g = 0.1f;
     float b = 0.1f;
@@ -20,30 +20,30 @@ public class BedController : MonoBehaviour
     {
         score = 0f;
         sr = this.GetComponent<SpriteRenderer>();
-        sr.color = Color.red;
+        //sr.color = Color.red;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.Z) && xLoc > -9f) {
-            xLoc -= bedSpeed;
+        if(Input.GetKey(KeyCode.Q) && yLoc > -4f) {
+            yLoc -= bedSpeed;
             //transform.rotation = new Quaternion(0,0,5,0);
         }
-        if(Input.GetKey(KeyCode.X) && xLoc < 9f) {
-            xLoc += bedSpeed;
+        if(Input.GetKey(KeyCode.A) && yLoc < 4f) {
+            yLoc += bedSpeed;
         }
-        this.transform.position = new Vector2(xLoc, transform.position.y);
-        counter += 1;
-        if (counter == 100){
-            oldR = r;
-            r = Random.Range(0.01f, 1.0f);
-            g = Random.Range(0.01f, 1.0f);
-            b = Random.Range(0.01f, 1.0f);
-            counter = 0;
-        }
-        redTest = Mathf.Lerp(oldR, r, 0.1f);
-        sr.color = new Color(redTest, g, b);
+        this.transform.position = new Vector2(transform.position.x, yLoc);
+        //counter += 1;
+        //if (counter == 100){
+        //    oldR = r;
+        //    r = Random.Range(0.01f, 1.0f);
+        //    g = Random.Range(0.01f, 1.0f);
+        //    b = Random.Range(0.01f, 1.0f);
+        //    counter = 0;
+        //}
+        //redTest = Mathf.Lerp(oldR, r, 0.1f);
+        //sr.color = new Color(redTest, g, b);
         
     }
     
