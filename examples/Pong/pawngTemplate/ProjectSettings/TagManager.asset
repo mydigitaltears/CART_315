@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Paddle
+  - Brick
   layers:
   - Default
   - TransparentFX

@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PaddleScript : MonoBehaviour {
-    private float     yPos;
+public class Paddle : MonoBehaviour {
+    private float     xPos;
     public float      paddleSpeed = .05f;
-    public float      topWall, bottomWall;
+    public float      leftWall, rightWall;
 
-    public KeyCode upKey, downKey;
+    public KeyCode leftKey, rightKey;
 
     // Start is called before the first frame update
     void Start() {
@@ -16,19 +16,19 @@ public class PaddleScript : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKey(downKey)) {
-            if (yPos > bottomWall) {
-                yPos -= paddleSpeed;
+        if (Input.GetKey(leftKey)) {
+            if (xPos > leftWall) {
+                xPos -= paddleSpeed;
             }
         }
 
-        if (Input.GetKey(upKey)) {
-            if (yPos < topWall) {
-                yPos += paddleSpeed;
+        if (Input.GetKey(rightKey)) {
+            if (xPos < rightWall) {
+                xPos += paddleSpeed;
             }
         }
 
-        transform.localPosition = new Vector3(transform.position.x, yPos, 0);
+        transform.localPosition = new Vector3(xPos, transform.position.y, 0);
     }
 }
 
