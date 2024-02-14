@@ -6,7 +6,7 @@ Vampire Survivor is a 2022 roguelite video game that took the world by storm bec
 It combines many existing and established ideas in a way that felt new and refreshing at the time it came out.
 
 When you first play the game, nothing needs to be explained to the player. You move the character by using the arrow keys and 
-you realise that the character attacks periodically. All you need to do is move and position yourself to make your attacks hit the enemies.
+you realize that the character attacks periodically. All you need to do is move and position yourself to make your attacks hit the enemies.
   
 The enemies come from every border of the screen and walk towards you. You need to evade them while positioning yourself to attack them.
 This simple gameplay combines elements of casual games because of the low number of inputs with elements of challenging roguelite games
