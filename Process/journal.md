@@ -24,6 +24,7 @@ as the time passes the ennemies come in greater number, deal more damage and hav
 as you play the game you realise which weapons work well together and how you can build your character properly to become overpowered and
 nearly untouchable. 
 <p>
+[![Alt text](https://github.com/mydigitaltears/CART_315/assets/25814675/c25743dc-b307-480d-a31e-db79892db78c)
 ![image](https://github.com/mydigitaltears/CART_315/assets/25814675/c25743dc-b307-480d-a31e-db79892db78c)
 
 
