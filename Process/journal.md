@@ -25,7 +25,5 @@ as you play the game you realise which weapons work well together and how you ca
 nearly untouchable. 
 <p>
 <img title="a title" alt="Alt text" src="https://github.com/mydigitaltears/CART_315/assets/25814675/c25743dc-b307-480d-a31e-db79892db78c">
-[![Alt text](https://github.com/mydigitaltears/CART_315/assets/25814675/c25743dc-b307-480d-a31e-db79892db78c)
-![image](https://github.com/mydigitaltears/CART_315/assets/25814675/c25743dc-b307-480d-a31e-db79892db78c)
 
 
