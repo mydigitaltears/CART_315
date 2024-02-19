@@ -14,10 +14,20 @@ public class BulletScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        yPos += 1;
-        transform.localPosition = new Vector3(transform.position.x, yPos, 0);
+        yPos += 0.05f;
         if (yPos > 6)
         {
+            Destroy(this.gameObject);
+        }
+        transform.localPosition = new Vector3(transform.position.x, yPos, 0);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log(other);
+        if (other.gameObject.tag == "Enemy")
+        {
+            Destroy(other.gameObject);
             Destroy(this.gameObject);
         }
     }
