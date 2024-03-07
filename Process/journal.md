@@ -22,9 +22,9 @@ very small amounf of inputs (in this case 4), but that also provide depth in the
 <h2> Week 7 (Conceptualizing prototypes)<h2>
 
 <p>
-I wanted to explore the notion of impossible games, or games that you have to push the boundaries of what the game allows you to do in order to win it. Games that seem to be mechanically hard when in fact they are puzzle games. <br>
+I wanted to explore the notion of impossible games, or games that you have to push the boundaries of what the game allows you to do in order to win it. Games that seem to be mechanically hard when in fact they are puzzle games.\
 The first idea I had was a rhythm game with different pressing timings for different keys on a keyboard. When the game starts adding 4 or 5 different timings it might become impossible to keep track of so the solution would be to ask different peoples to keep track of individual timings or use computer macros.
-<br>
+\
 Another idea I had a multiple answer conversation game based in a fictional language. With every answer you give you can see the reaction of the other character, this way can understand what the words mean to some extent. The kind of storytelling of a fictional world in this reminds me of what has been done with the game: Papers, Please!
 <br>
 
