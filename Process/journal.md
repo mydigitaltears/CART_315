@@ -22,12 +22,17 @@ very small amounf of inputs (in this case 4), but that also provide depth in the
 <h2> Week 7 (Conceptualizing prototypes)<h2>
 
 <p>
-I wanted to explore the notion of impossible games, or games that you have to push the boundaries of what the game allows you to do in order to win it. Games that seem to be mechanically hard when in fact they are puzzle games.
+I wanted to explore the notion of impossible games, or games that you have to push the boundaries of what the game allows you to do in order to win it. Games that are mechanically hard or that could encourage thinking outside of the box to beat them!
 
-The first idea I had was a rhythm game with different pressing timings for different keys on a keyboard. When the game starts adding 4 or 5 different timings it might become impossible to keep track of so the solution would be to ask different peoples to keep track of individual timings or use computer macros.
+The first idea I had was a rhythm game in a factory setting with conveyor belts. The player operates different machines with different keys and as the game goes the player has to keep track of more and more timings.
 
-Another idea I had a multiple answer conversation game based in a fictional language. With every answer you give you can see the reaction of the other character, this way can understand what the words mean to some extent. The kind of storytelling of a fictional world in this reminds me of what has been done with the game: Papers, Please!
-<br>
+Another idea I had was a multiple answer conversation game based in a fictional language. With every answer you give you can see the reaction of the other character, this way can understand what the words mean to some extent. The kind of storytelling of a fictional world in this reminds me of what has been done with the game: Papers, Please!
 
+I also thought of exploring games using the microphone, where the player would give instructions to a secret agent or general directions over the phone to complete some kind of objective.
+
+
+I then decided to prototype my first idea using three different rhythms of blocks falling down. After some playtesting I was able to get the hand of the timings so it was not to hard, but the goal would be to extend this concept into as many different keys as possible. After seeing other people playtest it, it seemed very hard to keep track of the timings, which can be a good or bad thing. The game seemed also quite alienating. It could actually be something to explore further given the plan of making it in a factory setting. Altough I was telling people that nothing new was going to come after the 3rd kind of timing starts appearing, people kept playing it for a while just zoning out trying to hit the blocks.
+
+![movie_001-ezgif com-video-to-gif-converter](https://github.com/mydigitaltears/CART_315/assets/25814675/3b561f25-e0c8-4032-8079-7261e9c75c52)
 
 <p>
