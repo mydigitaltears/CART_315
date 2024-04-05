@@ -15,6 +15,7 @@ public class PlayerScript : MonoBehaviour
     private bool canAttack = true;
     private float landLagTime = 0f;
     private bool momentum = false;
+    private bool isGrap = false;
 
     // DASHATTACk
     private bool isDashing = false;
@@ -39,7 +40,11 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask enemyLayer;
     [SerializeField] private TrailRenderer tr;
-
+    
+    void Awake()
+    {
+        _distanceJoint.enabled = false;
+    }
     void Start()
     {
         _distanceJoint.enabled = false;
@@ -47,19 +52,25 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Mouse0))
         {
             Vector2 mousePos = (Vector2)mainCamera.ScreenToWorldPoint(Input.mousePosition);
-            _lineRenderer.SetPosition(0, mousePos);
-            _lineRenderer.SetPosition(1, transform.position);
-            _distanceJoint.connectedAnchor = mousePos;
-            _distanceJoint.enabled = true;
-            _lineRenderer.enabled = true;
+            if(Physics2D.OverlapCircle(mousePos, 0.1f, groundLayer) && !isGrap)
+            {
+                _lineRenderer.SetPosition(0, mousePos);
+                _lineRenderer.SetPosition(1, transform.position);
+                _distanceJoint.connectedAnchor = mousePos;
+                _distanceJoint.enabled = true;
+                _lineRenderer.enabled = true;
+                isGrap = true;
+            }
+
         }
         else if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             _distanceJoint.enabled = false;
             _lineRenderer.enabled = false;
+            isGrap = false;
         }
 
         if (_lineRenderer.enabled)
@@ -144,16 +155,22 @@ public class PlayerScript : MonoBehaviour
             }
             else
             {
-                rb.velocity = new Vector2((horizontal * speed), rb.velocity.y);   
+                rb.velocity = new Vector2((horizontal * speed), rb.velocity.y);
             }
         }
         else
         {
             momentum = true;
-            // if ((pastXVel >= 0f && horizontal <= 0f) || (pastXVel <= 0f && horizontal >= 0f)){
-            //     rb.velocity = new Vector2(rb.velocity.x + ((horizontal * speed)*0.5f), rb.velocity.y);
-            //     Debug.Log("moving");
-            // }
+            Debug.Log(pastXVel);
+            Debug.Log(horizontal);
+//            if (((pastXVel >= 0f && horizontal <= 0f) || (pastXVel <= 0f && horizontal >= 0f)) && isGrap == false){
+//                rb.velocity = new Vector2(((horizontal * speed)*0.5f), rb.velocity.y);
+//                Debug.Log("Air Drifting!");
+//            }
+            if (isGrap == false)
+            {
+                rb.velocity = new Vector2(((horizontal * speed)), rb.velocity.y);
+            }
         }
     }
 
